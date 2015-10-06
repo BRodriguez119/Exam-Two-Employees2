@@ -1,18 +1,126 @@
 You are to allow for up to 20 managers, 100 employees and 500 people. 
 You and your group are to create a design tool, UMLs for each class and the program.  
 
-public class Person{
+public class Person {
+	
+	private String Name;
+	private String address;
+	private String phoneNumber;
+	private String emailAddress;
+	
+	//Constructor Method
+	public Person(String name, String address, String phoneNumber,
+			String emailAddress) {
+		super();
+		Name = name;
+		this.address = address;
+		this.phoneNumber = phoneNumber;
+		this.emailAddress = emailAddress;
+	}
+	
+	//Setters & Getters
+	public String getName() {
+		return Name;
+	}
 
-  private String name;
-  
-  private String address; 
+	public void setName(String name) {
+		Name = name;
+	}
 
-  private String phoneNum;
+	public String getAddress() {
+		return address;
+	}
 
-  private String email;
-  
-  
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
-  }//End Main
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
 
-}End Class
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+	
+}//end Person
+
+public class Employee {
+	
+	private String dateHired;
+	private double hourlyRate; 
+	private String positon;
+	
+	//Constructor Method
+	public Employee(String dateHired, double hourlyRate, String positon) {
+		super();
+		this.dateHired = dateHired;
+		this.hourlyRate = hourlyRate;
+		this.positon = positon;
+	}
+
+	//Setters & Getters
+	public String getDateHired() {
+		return dateHired;
+	}
+
+	public void setDateHired(String dateHired) {
+		this.dateHired = dateHired;
+	}
+
+	public double getHourlyRate() {
+		return hourlyRate;
+	}
+
+	public void setHourlyRate(double hourlyRate) {
+		this.hourlyRate = hourlyRate;
+	}
+
+	public String getPositon() {
+		return positon;
+	}
+
+	public void setPositon(String positon) {
+		this.positon = positon;
+	}
+
+}//end Employee
+
+public class Manager {
+
+	private String Title;
+	private String Department;
+	
+	//Constructor Method
+	public Manager(String title, String department) {
+		super();
+		Title = title;
+		Department = department;
+	}
+
+	//Setters & Getters
+	public String getTitle() {
+		return Title;
+	}
+
+	public void setTitle(String title) {
+		Title = title;
+	}
+
+	public String getDepartment() {
+		return Department;
+	}
+
+	public void setDepartment(String department) {
+		Department = department;
+	}
+	
+}//end Manager
