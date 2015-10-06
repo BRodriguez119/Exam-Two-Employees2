@@ -1,12 +1,18 @@
-*.class
+You are to allow for up to 20 managers, 100 employees and 500 people. 
+You and your group are to create a design tool, UMLs for each class and the program.  
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+public class Person{
 
-# Package Files #
-*.jar
-*.war
-*.ear
+  private String name;
+  
+  private String address; 
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+  private String phoneNum;
+
+  private String email;
+  
+  
+
+  }//End Main
+
+}End Class
